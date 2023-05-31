@@ -12,6 +12,9 @@ await page.goto("https://example.com", {
   waitUntil: "networkidle2",
   timeout: 60000,
 });
-
 await page.screenshot({ path: "example.com.png" });
+
+await page.goto("https://devconfbd.com/");
+await page.screenshot({ path: "devconfbd.png" });
+
 await browser.close();
